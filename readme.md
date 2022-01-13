@@ -7,9 +7,9 @@ Tehtävät arvostellaan käyttäen [GitHub classroom](https://classroom.github.c
 
 ## Harjoitusten kloonaaminen
 
-Kun olet hyväksynyt tehtävän GitHub classroomissa ja saanut oman henkilökohtaisen repositorion, kloonaa se itsellesi `git clone` -komennolla. Siirry sen jälkeen komentorivillä klonattuun hakemistoon `cd linux-commands-kayttajanimi`-komennolla.
+Kun olet hyväksynyt tehtävän GitHub classroomissa ja saanut repositoriosta henkilökohtaisen kopion, kloonaa se itsellesi `git clone` -komennolla. Siirry sen jälkeen komentorivillä klonattuun hakemistoon `cd linux-commands-kayttajanimi`-komennolla.
 
-**Älä kloonaa suoraan https://github.com/harjoitukset/linux-commands projektia, vaan oma kopiosi siitä.** Oman kopiosi tunnistat siitä, että Git-osoitteen lopussa on oma GitHub-käyttäjänimesi.
+Kloonatessasi repositoriota varmista, että Git-osoitteen lopussa on oma GitHub-käyttäjänimesi. Jos käyttäjänimesi puuttuu osoitteesta, kyseessä ei ole henkilökohtainen kopiosi tehtävästä. Luo tässä tapauksessa oma repositorio tämän linkin kautta: https://classroom.github.com/a/sfL1f-zJ.
 
 
 ## Harjoitusten tekeminen
@@ -57,7 +57,7 @@ Klikkaamalla yllä olevan linkin takaa viimeisintä "GitHub Classroom Workflow" 
 
 4. **Logihakemiston listaus**
 
-    Tämän repositorion sisällä on kemisto nimeltä **"log"**. Kirjoita komento, joka listaa kaikki kyseisen alihakemiston sisältämät tiedostot ja hakemistot pitkässä muodossa.
+    Tämän repositorion sisällä on hakemisto nimeltä **"log"**. Kirjoita komento, joka listaa kaikki kyseisen alihakemiston sisältämät tiedostot ja hakemistot pitkässä muodossa.
 
     Lisää käyttämäsi komento `04_list_log_directory.sh`-tiedostoon.
 
@@ -111,7 +111,7 @@ Klikkaamalla yllä olevan linkin takaa viimeisintä "GitHub Classroom Workflow" 
 
     Git ei oletuksena pidä kirjaa tyhjistä hakemistoista. Jos haluat hakemiston versionhallintaan, siihen tulee luoda esimerkiksi tyhjä tiedosto.
     
-    Kirjoita komento, joka lisää äsken luomaasi `documents`-hakemistoon tyhjän tiedoston nimeltä `.gitkeep`. [What is a GITKEEP file?](https://fileinfo.com/extension/gitkeep)
+    Kirjoita komento, joka lisää äsken luomaasi `documents`-hakemistoon tyhjän tiedoston nimeltä `.gitkeep`. Lue tarvittaessa lisätietoja keskustelusta ["What are the differences between .gitignore and .gitkeep?"](https://stackoverflow.com/a/7229996)
 
     Lisää käyttämäsi komento `11_create_gitkeep.sh`-tiedostoon.
 
