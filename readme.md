@@ -45,31 +45,39 @@ Klikkaamalla yllä olevan linkin takaa viimeisintä "GitHub Classroom Workflow" 
 
 2. **Nykyinen polku**
 
-    Kirjoita komento, joka tulostaa nykyisen hakemiston polun.
+    Kirjoita komento, joka tulostaa nykyisen hakemiston polun, esim. `/home/me/linux-commands-me`.
     
     Lisää käyttämäsi komento `02_print_working_directory.sh`-tiedostoon.
 
 3. **Nykyisen hakemiston listaus**
 
-    Kirjoita komento, joka listaa **kaikki** nykyisen hakemiston sisältämät tiedostot ja alihakemistot pitkässä muodossa. Listauksessa tulee siis näkyä mm. piilotiedostot ja tiedostojen muokkausajat.
+    Kirjoita komento, joka listaa **kaikki** nykyisen hakemiston sisältämät tiedostot ja alihakemistot pitkässä muodossa. Listauksessa tulee siis näkyä mm. piilotiedostot ja tiedostojen muokkausajat esim. seuraavassa muodossa:
+    
+    ```
+    drwxr-xr-x+ 5 me me 4096 Jan  9 13:45 .
+    drwxr-xr-x+ 5 me me 4096 Jan  9 13:45 ..
+    -rwxr-xr-x  1 me me   19 Jan 10 08:14 01_hello_world.sh
+    -rwxr-xr-x  1 me me    4 Jan 10 08:14 02_print_working_directory.sh
+    ...
+    ```
 
     Lisää käyttämäsi komento `03_list_directory.sh`-tiedostoon.
 
 4. **Logihakemiston listaus**
 
-    Tämän repositorion sisällä on hakemisto nimeltä **"log"**. Kirjoita komento, joka listaa kaikki kyseisen alihakemiston sisältämät tiedostot ja hakemistot pitkässä muodossa.
+    Tämän repositorion sisällä on hakemisto nimeltä **"log"**. Kirjoita komento, joka listaa kaikki kyseisen alihakemiston sisältämät tiedostot ja hakemistot pitkässä muodossa. Muotoilun tulee olla sama kuin edellisessä kohdassa.
 
     Lisää käyttämäsi komento `04_list_log_directory.sh`-tiedostoon.
 
 5. **Ylähakemiston listaus**
 
-    Kirjoita komento, joka listaa **kaikki** nykyisen hakemiston ylähakemiston (parent directory) sisältämät tiedostot ja alihakemistot pitkässä muodossa. Listauksessa tulee siis näkyä mm. piilotiedostot ja tiedostojen muokkausajat.
+    Kirjoita komento, joka listaa **kaikki** nykyisen hakemiston ylähakemiston (parent directory) sisältämät tiedostot ja alihakemistot pitkässä muodossa. Listauksessa tulee siis näkyä mm. piilotiedostot ja tiedostojen muokkausajat kuten edellisissä kohdissa.
 
     Lisää käyttämäsi komento `05_list_parent_directory.sh`-tiedostoon.
 
 6. **Kotihakemiston listaus**
 
-    Kirjoita komento, joka listaa **kaikki** käyttäjän kotihakemiston sisältämät tiedostot ja alihakemistot pitkässä muodossa. Listauksessa tulee siis näkyä mm. piilotiedostot ja tiedostojen muokkausajat.
+    Kirjoita komento, joka listaa **kaikki** käyttäjän kotihakemiston sisältämät tiedostot ja alihakemistot pitkässä muodossa. Listauksessa tulee siis näkyä mm. piilotiedostot ja tiedostojen muokkausajat kuten edellisissä kohdissa.
 
     Lisää käyttämäsi komento `06_list_home_directory.sh`-tiedostoon.
 
@@ -78,21 +86,21 @@ Klikkaamalla yllä olevan linkin takaa viimeisintä "GitHub Classroom Workflow" 
 
 7. **Tiedoston sisältö**
 
-    Kirjoita komento, joka tulostaa ruudulle `log/auth.log`-tiedoston sisällön.
+    Kirjoita komento, joka tulostaa ruudulle [log/auth.log](log/auth.log)-tiedoston sisällön.
 
     Lisää käyttämäsi komento `07_cat_auth_log.sh`-tiedostoon.
 
 
 8. **Monen tiedoston sisältö**
 
-    Kirjoita komento, joka tulostaa ruudulle samalla kertaa sekä `log/auth.log`-tiedoston että `log/access.log`-tiedoston sisällöt.
+    Kirjoita komento, joka tulostaa ruudulle samalla kertaa sekä [log/auth.log](log/auth.log)-tiedoston että [log/access.log](log/access.log)-tiedoston sisällöt.
     
     Lisää käyttämäsi komento `08_cat_two_files.sh`-tiedostoon.
 
 
 9. **Ympäristömuuttuja**
 
-    Kirjoita komento, joka tulostaa ruudulle `PATH`-nimisen ympäristömuuttujan arvon.
+    Kirjoita komento, joka tulostaa ruudulle [`PATH`-nimisen ympäristömuuttujan arvon](https://en.wikipedia.org/wiki/PATH_(variable)). Muuttuja sisältää tyypillisesti pitkän merkkijonon kaksoispisteellä erotelluista hakemistoista, kuten `/bin:/usr/bin:/usr/local/bin`.
 
     Lisää käyttämäsi komento `09_echo_path.sh`-tiedostoon.
 
@@ -102,7 +110,7 @@ Klikkaamalla yllä olevan linkin takaa viimeisintä "GitHub Classroom Workflow" 
 
 10. **Luo hakemisto**
 
-    Kirjoita komento, joka luo uuden hakemiston nimeltä `documents`.
+    Kirjoita komento, joka luo uuden hakemiston nimeltä `documents`. Luodun hakemiston tulee näkyä nykyisen hakemiston listauksessa.
 
     Lisää käyttämäsi komento `10_create_directory.sh`-tiedostoon.
 
@@ -113,7 +121,9 @@ Klikkaamalla yllä olevan linkin takaa viimeisintä "GitHub Classroom Workflow" 
     
     Kirjoita komento, joka lisää äsken luomaasi `documents`-hakemistoon tyhjän tiedoston nimeltä `.gitkeep`. Lue tarvittaessa lisätietoja keskustelusta ["What are the differences between .gitignore and .gitkeep?"](https://stackoverflow.com/a/7229996)
 
-    Lisää käyttämäsi komento `11_create_gitkeep.sh`-tiedostoon.
+    Lisää käyttämäsi komento `11_create_gitkeep.sh`-tiedostoon. 
+    
+    💡 Tässä tehtävässä documents-hakemisto on listattu `.gitignore`-tiedostoon, joten luomasi hakemisto ei .gitkeep-tiedostosta huolimatta päädy versionhallintaan.
 
 
 ## Tiedostoon kirjoittaminen
@@ -122,15 +132,19 @@ Klikkaamalla yllä olevan linkin takaa viimeisintä "GitHub Classroom Workflow" 
 
     Gitissä on käytössä erityinen [.gitignore-tiedosto](https://git-scm.com/docs/gitignore), johon voidaan lisätä lista sellaisista tiedostoista ja hakemistoista, joita ei haluta mukaan versionhallintaan. Tyypillinen hakemisto, joka voidaan lisätä tähän tiedostoon, on NPM-paketit sisältävä `node_modules`.
 
-    Kirjoita komento, joka lisää rivin `node_modules` nykyisen `.gitignore`-tiedoston loppuun. **Komento ei saa korvata tiedoston nykyistä sisältöä**, vaan sen tulee lisätä uusi rivi nykyisten perään.
+    Kirjoita komento, joka lisää rivin `node_modules` nykyisen `.gitignore`-tiedoston loppuun. **Komento ei saa korvata tiedoston nykyistä sisältöä**, vaan sen tulee lisätä uusi rivi nykyisten perään. Mikäli vahingossa muutat tiedoston alkuperäistä sisältöä, voit palauttaa sen takaisin `git restore` -komennolla: `git restore .gitignore`.
 
-    Lisää käyttämäsi komento `12_ignore_node_modules.sh`-tiedostoon.
+    Lisää käyttämäsi komento `12_ignore_node_modules.sh`-tiedostoon. 
+    
+    💡 Voit halutessasi commitoida myös muuttuneen `.gitignore`-tiedoston, mutta se ei ole välttämätöntä.
 
 13. **Tiedoston poistaminen**
 
-    Kirjoita komento, joka poistaa tiedoston `log/error.log`. Jos haluat testata tiedoston poistamista monta kertaa, voit palauttaa tiedoston takaisin Gitin historiasta komennolla `git restore log/error.log`.
+    Kirjoita komento, joka poistaa tiedoston `log/error.log`. Jos haluat testata tiedoston poistamista monta kertaa, voit palauttaa tiedoston takaisin Gitin historiasta `git restore` -komennolla: `git restore log/error.log`.
 
-    Lisää käyttämäsi komento `13_remove_file.sh`-tiedostoon.
+    Lisää käyttämäsi komento `13_remove_file.sh`-tiedostoon. 
+    
+    💡 Voit halutessasi poistaa error.log-tiedoston myös versionhallinnasta, mutta se ei ole välttämätöntä.
 
 
 ## Ohjaus ja putkittaminen
@@ -139,7 +153,9 @@ Klikkaamalla yllä olevan linkin takaa viimeisintä "GitHub Classroom Workflow" 
 
     Kirjoita komento, joka tulostaa kerralla kaikkien `log`-alihakemistossa olevien `.log`-päätteisten tiedostojen sisällöt, ja ohjaa ne uuteen tiedostoon `log/all.txt`.
 
-    Lisää käyttämäsi komento `14_cat_to_file.sh`-tiedostoon.
+    Lisää käyttämäsi komento `14_cat_to_file.sh`-tiedostoon. 
+    
+    💡 `all.txt` on mainittuna .gitignore-tiedostossa, joten se ei päädy versionhallintaan.
 
 15. **Putkittaminen (piping)**
 
@@ -151,6 +167,6 @@ Klikkaamalla yllä olevan linkin takaa viimeisintä "GitHub Classroom Workflow" 
 
 ## Lisenssit ja tekijänoikeudet
 
-Tiedosto log/auth.log on lainattu Digital Oceanin artikkelista ["How To Monitor System Authentication Logs on Ubuntu"](https://www.digitalocean.com/community/tutorials/how-to-monitor-system-authentication-logs-on-ubuntu) ja se on lisensoitu [CC BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/) -lisenssillä.
+Tiedosto log/auth.log on lainattu Digital Oceanin artikkelista ["How To Monitor System Authentication Logs on Ubuntu"](https://www.digitalocean.com/community/tutorials/how-to-monitor-system-authentication-logs-on-ubuntu) ja se on lisensoitu [CC BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/) -lisenssillä. Tiedosto log/error.log on generoitu [ChatGPT-tekoälyllä](https://github.com/openai/chatbot-gpt).
 
 Nämä harjoitukset on luonut Teemu Havulinna ja ne on lisensoitu [CC BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/) -lisenssillä.
