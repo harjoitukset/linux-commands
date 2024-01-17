@@ -4,6 +4,8 @@ Tämä repositorio sisältää tehtäviä Linux-komentoihin perehtymiseksi. Kome
 
 Tehtävät arvostellaan käyttäen [GitHub classroom](https://classroom.github.com/) -palvelua, joka suorittaa komentosi, ja tarkastaa ja pisteyttää niiden tulokset automaattisesti. Taustalla GitHub classroom hyödyntää [GitHub actions](https://github.com/features/actions) -nimistä jatkuvan integroinnin palvelua. Voit tarvittaessa yrittää tehtäviä monta kertaa. Tee tällöin uusi commit, ja vie muutokset uudelleen GitHubiin.
 
+⚠ **Huom!** Ole varovainen käyttäessäsi komentoriviä. Väärät tai virheellisesti käytetyt komennot voivat aiheuttaa korjaamatonta vahinkoa tiedostoille tai järjestelmälle. Älä kopioi ja suorita eri lähteistä mahdollisesti löytämiäsi komentoja ilman, että olet varma siitä, mitä ne tekevät. Jos olet epävarma, kysy neuvoa kurssin keskustelukanavilla. Lisäksi suosittelemme käyttämään virtualisoitua ympäristöä kurssin ohjeistuksen mukaisesti.
+
 
 ## Harjoitusten kloonaaminen
 
@@ -35,7 +37,7 @@ Klikkaamalla yllä olevan linkin takaa viimeisintä "GitHub Classroom Workflow" 
 1. **Echo**
 
     *Tämä on lämmittelytehtävä, jossa riittää, että suoritat valmiiksi annetun komennon ja lisäät sen `01_hello_world.sh`-tiedostoon.*
-    
+
     Voit tulostaa tekstiä komentorivillä `echo`-komennolla. Kokeile kirjoittaa komentoriville `echo 'Hello world!'`. Komento tulostaa odotetusti tekstin `Hello world`.
 
     Lisää lopuksi komento `01_hello_world.sh`-tiedostoon.
@@ -46,13 +48,13 @@ Klikkaamalla yllä olevan linkin takaa viimeisintä "GitHub Classroom Workflow" 
 2. **Nykyinen polku**
 
     Kirjoita komento, joka tulostaa nykyisen hakemiston polun, esim. `/home/me/linux-commands-me`.
-    
+
     Lisää käyttämäsi komento `02_print_working_directory.sh`-tiedostoon.
 
 3. **Nykyisen hakemiston listaus**
 
     Kirjoita komento, joka listaa **kaikki** nykyisen hakemiston sisältämät tiedostot ja alihakemistot pitkässä muodossa. Listauksessa tulee siis näkyä mm. piilotiedostot ja tiedostojen muokkausajat esim. seuraavassa muodossa:
-    
+
     ```
     drwxr-xr-x+ 5 me me 4096 Jan  9 13:45 .
     drwxr-xr-x+ 5 me me 4096 Jan  9 13:45 ..
@@ -94,7 +96,7 @@ Klikkaamalla yllä olevan linkin takaa viimeisintä "GitHub Classroom Workflow" 
 8. **Monen tiedoston sisältö**
 
     Kirjoita komento, joka tulostaa ruudulle samalla kertaa sekä [log/auth.log](log/auth.log)-tiedoston että [log/access.log](log/access.log)-tiedoston sisällöt.
-    
+
     Lisää käyttämäsi komento `08_cat_two_files.sh`-tiedostoon.
 
 
@@ -118,11 +120,11 @@ Klikkaamalla yllä olevan linkin takaa viimeisintä "GitHub Classroom Workflow" 
 11. **Luo tiedosto**
 
     Git ei oletuksena pidä kirjaa tyhjistä hakemistoista. Jos haluat hakemiston versionhallintaan, siihen tulee luoda esimerkiksi tyhjä tiedosto.
-    
+
     Kirjoita komento, joka lisää äsken luomaasi `documents`-hakemistoon tyhjän tiedoston nimeltä `.gitkeep`. Lue tarvittaessa lisätietoja keskustelusta ["What are the differences between .gitignore and .gitkeep?"](https://stackoverflow.com/a/7229996)
 
-    Lisää käyttämäsi komento `11_create_gitkeep.sh`-tiedostoon. 
-    
+    Lisää käyttämäsi komento `11_create_gitkeep.sh`-tiedostoon.
+
     💡 Tässä tehtävässä documents-hakemisto on listattu `.gitignore`-tiedostoon, joten luomasi hakemisto ei .gitkeep-tiedostosta huolimatta päädy versionhallintaan.
 
 
@@ -134,16 +136,16 @@ Klikkaamalla yllä olevan linkin takaa viimeisintä "GitHub Classroom Workflow" 
 
     Kirjoita komento, joka lisää rivin `node_modules` nykyisen `.gitignore`-tiedoston loppuun. **Komento ei saa korvata tiedoston nykyistä sisältöä**, vaan sen tulee lisätä uusi rivi nykyisten perään. Mikäli vahingossa muutat tiedoston alkuperäistä sisältöä, voit palauttaa sen takaisin `git restore` -komennolla: `git restore .gitignore`.
 
-    Lisää käyttämäsi komento `12_ignore_node_modules.sh`-tiedostoon. 
-    
+    Lisää käyttämäsi komento `12_ignore_node_modules.sh`-tiedostoon.
+
     💡 Voit halutessasi commitoida myös muuttuneen `.gitignore`-tiedoston, mutta se ei ole välttämätöntä.
 
 13. **Tiedoston poistaminen**
 
     Kirjoita komento, joka poistaa tiedoston `log/error.log`. Jos haluat testata tiedoston poistamista monta kertaa, voit palauttaa tiedoston takaisin Gitin historiasta `git restore` -komennolla: `git restore log/error.log`.
 
-    Lisää käyttämäsi komento `13_remove_file.sh`-tiedostoon. 
-    
+    Lisää käyttämäsi komento `13_remove_file.sh`-tiedostoon.
+
     💡 Voit halutessasi poistaa error.log-tiedoston myös versionhallinnasta, mutta se ei ole välttämätöntä.
 
 
@@ -153,8 +155,8 @@ Klikkaamalla yllä olevan linkin takaa viimeisintä "GitHub Classroom Workflow" 
 
     Kirjoita komento, joka tulostaa kerralla kaikkien `log`-alihakemistossa olevien `.log`-päätteisten tiedostojen sisällöt, ja ohjaa ne uuteen tiedostoon `log/all.txt`.
 
-    Lisää käyttämäsi komento `14_cat_to_file.sh`-tiedostoon. 
-    
+    Lisää käyttämäsi komento `14_cat_to_file.sh`-tiedostoon.
+
     💡 `all.txt` on mainittuna .gitignore-tiedostossa, joten se ei päädy versionhallintaan.
 
 15. **Putkittaminen (piping)**
