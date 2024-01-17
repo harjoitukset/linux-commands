@@ -12,7 +12,7 @@ permissions:
 jobs:
   build:
     name: Autograding
-    if: github.repository_owner != 'harjoitukset'
+    if: github.actor != 'github-classroom[bot]'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
