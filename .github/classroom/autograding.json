@@ -132,7 +132,7 @@
         },
         {
             "name": "14_cat_to_file",
-            "setup": "",
+            "setup": "rm -rf log/all.txt",
             "run": "./14_cat_to_file.sh; cat log/all.txt",
             "input": "",
             "output": "favicon.ico",
@@ -149,6 +149,56 @@
             "comparison": "included",
             "timeout": 1,
             "points": 1
+        },
+        {
+            "name": "16_install",
+            "setup": "",
+            "run": "cat /16_install.sh",
+            "input": "",
+            "output": "curl",
+            "comparison": "included",
+            "timeout": 1,
+            "points": 0
+        },
+        {
+            "name": "17_curl",
+            "setup": "",
+            "run": "./17_curl.sh",
+            "input": "",
+            "output": "userId",
+            "comparison": "included",
+            "timeout": 1,
+            "points": 0
+        },
+        {
+            "name": "18_base64",
+            "setup": "",
+            "run": "./18_base64.sh",
+            "input": "",
+            "output": "Once upon a time",
+            "comparison": "included",
+            "timeout": 1,
+            "points": 0
+        },
+        {
+            "name": "19_processes",
+            "setup": "",
+            "run": "cat 19_processes.sh",
+            "input": "",
+            "output": "sshd",
+            "comparison": "included",
+            "timeout": 1,
+            "points": 0
+        },
+        {
+            "name": "20_end_process",
+            "setup": "",
+            "run": "./20_end_process.sh",
+            "input": "",
+            "output": "3003",
+            "comparison": "included",
+            "timeout": 1,
+            "points": 0
         }
     ]
 }
