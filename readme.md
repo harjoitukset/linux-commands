@@ -182,6 +182,7 @@ Klikkaamalla yllä olevan linkin takaa viimeisintä "GitHub Classroom Workflow" 
 
     Lisää käyttämäsi komento `15_head.sh`-tiedostoon.
 
+    💡 Mikäli törmäät virheeseen "This system has been minimized...", asenna ensin `man`-työkalu seuraavilla komennoilla: `unminimize` ja `apt install man-db`.
 
 ## Soveltavat (⭐ extra ⭐)
 
