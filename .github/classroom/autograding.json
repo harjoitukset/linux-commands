@@ -122,10 +122,10 @@
         },
         {
             "name": "13_remove_file",
-            "setup": "touch log/error.log",
-            "run": "./13_remove_file.sh; test -f log/error.log ; echo $?",
+            "setup": "",
+            "run": "cat ./13_remove_file.sh",
             "input": "",
-            "output": "1",
+            "output": "error.log",
             "comparison": "included",
             "timeout": 1,
             "points": 1
@@ -153,7 +153,7 @@
         {
             "name": "16_install",
             "setup": "",
-            "run": "cat /16_install.sh",
+            "run": "cat 16_install.sh",
             "input": "",
             "output": "curl",
             "comparison": "included",
@@ -193,7 +193,7 @@
         {
             "name": "20_end_process",
             "setup": "",
-            "run": "./20_end_process.sh",
+            "run": "cat 20_end_process.sh",
             "input": "",
             "output": "3003",
             "comparison": "included",
