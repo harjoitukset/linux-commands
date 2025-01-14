@@ -149,7 +149,9 @@
             "comparison": "included",
             "timeout": 1,
             "points": 1
-        },
+        }
+    ],
+    "extras": [
         {
             "name": "16_install",
             "setup": "",
