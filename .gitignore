@@ -1,1 +1,37 @@
+# typical .gitignore file for a project could look like this:
+*.log
+*.tmp
+*.bak
+*.swp
+*.DS_Store
+.vscode/
+.idea/
+.eclipse/
+.env
+
+# Compiled source code files are often ignored, as they would cause merge conflicts:
+*.class
+*.o
+*.so
+*.dll
+*.exe
+bin/
+build/
+dist/
+
+# There could also be more project specific ignores:
+*.unicorn
+*.lol
+*.wtf
+*.omg
+*.nope
+*.banana
+*.cat
+*.meme
+dontlookhere.txt
+secret_plan_for_world_domination.docx
+debug_this_if_you_dare.tmp
+invisible_file
+
+# The following lines are related to the exercises in this repository:
 all.txt
