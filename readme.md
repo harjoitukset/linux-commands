@@ -212,13 +212,13 @@ Tehtäviä arvioitaessa komennot suoritetaan suoraan tiedostoista, joten sinun k
 
     Perehdy Ubuntun tutoriaaliin ["Viewing and Monitoring Processes in Linux"](https://discourse.ubuntu.com/t/viewing-and-monitoring-processes-in-linux/26024) prosessien tietojen listaamisen osalta. Seuraa ohjeita ja kokeile mahdollisuuksien mukaan soveltaa niitä.
 
-    Lisää tutoriaalissa esitetty komento `sshd`-prosessin tietojen katsomiseksi `19_processes.sh`-tiedostoon.
+    Lisää tutoriaalissa esitetty komento `sshd`-prosessin tietojen katsomiseksi `19_processes.sh`-tiedostoon. Omalla koneellasi vastaavaa prosessia ei todennäköisesti ole käynnissä, joten riittää, että perehdyt komentoon tutoriaalin perusteella.
 
 20. **Prosessin lopettaminen**
 
     Jatka tutoriaaliin ["Viewing and Monitoring Processes in Linux"](https://discourse.ubuntu.com/t/viewing-and-monitoring-processes-in-linux/26024) perehtymistä prosessien lopettamisen osalta. Seuraa ohjeita ja kokeile mahdollisuuksien mukaan soveltaa niitä.
 
-    Lisää tutoriaalissa esitetty komento prosessin `3003` lopettamiseksi `20_end_process.sh`-tiedostoon.
+    Lisää tutoriaalissa esitetty komento prosessin `3003` lopettamiseksi `20_end_process.sh`-tiedostoon. Omalla koneellasi ei todennäköisesti ole käynnissä prosessia `3003`, mutta se ei ole tämän tehtävän kannalta ongelma.
 
 
 ## Lisenssit ja tekijänoikeudet
