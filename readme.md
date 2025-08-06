@@ -1,24 +1,11 @@
 # Linux-komennot
 
-Tämä repositorio sisältää tehtäviä Linux-komentoihin perehtymiseksi. Komennot ovat yhteensopivia useimpien Linux/Unix-versioiden kanssa, joten yhteensopivuusongelmia **ei pitäisi** ilmentyä. **Tätä tehtävää ei kuitenkaan voi tehdä Windowsin komentorivillä**.
+Tämä repositorio sisältää tehtäviä Linux-komentoihin perehtymiseksi. Komennot ovat yhteensopivia useimpien Linux/Unix-versioiden kanssa, joten yhteensopivuusongelmia **ei pitäisi** ilmentyä. Myös Windows yhdessä [WSL2](https://learn.microsoft.com/en-us/windows/wsl/install):n kanssa toimii hyvin, mutta PowerShell ja cmd eivät riitä tähän tehtävään.
 
 Tehtävät arvostellaan käyttäen [GitHub classroom](https://classroom.github.com/) -palvelua, joka suorittaa komentosi, ja tarkastaa ja pisteyttää niiden tulokset automaattisesti. Taustalla GitHub classroom hyödyntää [GitHub actions](https://github.com/features/actions) -nimistä jatkuvan integroinnin palvelua. Voit tarvittaessa yrittää tehtäviä monta kertaa. Tee tällöin uusi commit, ja vie muutokset uudelleen GitHubiin.
 
 > [!WARNING]
 > Ole varovainen käyttäessäsi komentoriviä. Väärät tai virheellisesti käytetyt komennot voivat aiheuttaa korjaamatonta vahinkoa tiedostoille tai järjestelmälle. Älä kopioi ja suorita eri lähteistä mahdollisesti löytämiäsi komentoja ilman, että olet varma siitä, mitä ne tekevät. Jos olet epävarma, kysy neuvoa kurssin keskustelukanavilla. Lisäksi suosittelemme käyttämään virtualisoitua ympäristöä kurssin ohjeistuksen mukaisesti.
-
-
-## Docker (valinnainen 🪄)
-
-Mikäli sinulla on Docker asennettuna, voit käynnistää tehtävää varten uuden Ubuntu-kontin ja ratkaista tehtävät kontin sisällä. Suorita komentorivillä seuraava komento tämän tehtävän juurihakemistossa (sama hakemisto, jossa tämä tiedosto sijaitsee):
-
-```sh
-docker compose run ubuntu
-```
-
-Docker compose -työkalu lukee [docker-compose.yml-asetustiedoston](./docker-compose.yml) ja käynnistää sen määritysten mukaisesti uuden Ubuntu-kontin. Tämä tehtävähakemisto liitetään kontin sisälle `/app`-hakemistoon, joten voit muokata samoja tiedostoja joko omassa käyttöjärjestelmässäsi tai kontin sisällä, ja muutokset näkyvät molemmissa. Voit poistua lopuksi kontista `exit`-komennolla, joka samalla poistaa kontin. Kontin sisälle liitettyyn tehtävähakemistoon tehdyt muutokset kuitenkin säilyvät, vaikka kontti poistetaan.
-
-Mikäli käytät yllä mainittua komentoa, löydät tarkemman kuvauksen sen toiminnasta [docker-compose.yml](./docker-compose.yml)-tiedostosta.
 
 
 ## Harjoitusten kloonaaminen
@@ -28,11 +15,17 @@ Kun olet hyväksynyt tehtävän GitHub classroomissa ja saanut repositoriosta he
 Kloonatessasi repositoriota varmista, että Git-osoitteen lopussa on oma GitHub-käyttäjänimesi. Jos käyttäjänimesi puuttuu osoitteesta, kyseessä ei ole henkilökohtainen kopiosi tehtävästä. Luo tässä tapauksessa oma tehtävärepositoriosi Teams-tehtävästä löytyvän linkin kautta.
 
 
-## Harjoitusten tekeminen
+## Docker (suositeltu 🪄)
 
-Tämä tehtävä koostuu komennoista, joista kaikki tulee suorittaa tämän Git-repositorion **juurihakemistossa**, eli samassa hakemistossa, jossa tämä readme.md-tiedosto sijaitsee.
+Mikäli sinulla on Docker asennettuna, voit käynnistää tehtävää varten uuden Ubuntu-kontin ja ratkaista tehtävät kontin sisällä. Suorita komentorivillä seuraava komento tämän tehtävän juurihakemistossa (sama hakemisto, jossa tämä tiedosto sijaitsee):
 
-Kokeile ensin suorittaa tehtävien komentoja suoraan komentoriviltä ilman skriptien kirjoittamista. Kun olet saanut komennon toimimaan oikein, kopioi se tehtävää vastaavaan `.sh`-päätteiseen skriptitiedostoon. Lisää tiedostoihin tekemäsi muutokset versionhallintaan `git add` ja `git commit` -komennoilla.
+```sh
+docker compose run ubuntu
+```
+
+[Docker compose -työkalu](https://docs.docker.com/compose/) lukee [docker-compose.yml-asetustiedoston](./docker-compose.yml) ja käynnistää sen määritysten mukaisesti uuden Ubuntu-kontin. Tämä tehtävähakemisto liitetään kontin sisälle `/app`-hakemistoon, joten voit muokata samoja tiedostoja joko omassa käyttöjärjestelmässäsi tai kontin sisällä, ja muutokset näkyvät molemmissa. Voit poistua lopuksi kontista `exit`-komennolla, joka samalla poistaa kontin. Kontin sisälle liitettyyn tehtävähakemistoon tehdyt muutokset kuitenkin säilyvät, vaikka kontti poistetaan.
+
+Mikäli käytät yllä mainittua komentoa, löydät tarkemman kuvauksen sen toiminnasta [docker-compose.yml](./docker-compose.yml)-tiedostosta.
 
 
 ## Vastausten lähettäminen
@@ -47,28 +40,33 @@ Klikkaamalla yllä olevan linkin takaa viimeisintä "GitHub Classroom Workflow" 
 
 # Tehtävät
 
+Kussakin tehtävässä on tarkoituksena suorittaa jokin tietty komento tai komentosarja. Suoritettu komento tulee lisätä sitä vastaavaan `.sh`-päätteiseen tiedostoon. Suosittelemme ensin kokeilemaan komentoja suoraan komentoriviltä, ja kun komento toimii, kopioimaan sen vastaavaan tiedostoon. Lisää skripteihin tekemäsi muutokset versionhallintaan `git add` ja `git commit` -komennoilla.
+
+Tarvittavia komentoja ei koostettu kurssin puolesta valmiiksi, vaan sinun tulee itse selvittää, mitä komentoja kussakin tapauksessa vaaditaan. Käytä apunasi hakukoneita ja tutoriaaleja.
+
+Tehtäviä arvioitaessa komennot suoritetaan suoraan tiedostoista, joten sinun kannattaa varmistaa ratkaisujesi toimivuus myös suorittamalla ne tiedostoista, esim. `./01_hello_world.sh`. Huomaa, että tiedostot suoritetaan testeissä tämän repositorion juuressa, eli hakemistossa, jossa tämä readme.md-tiedosto sijaitsee. Varmista siis, että skriptisi eivät oleta työhakemistoksi muita hakemistoja.
+
+
 ## Hello world
 
 1. **Echo**
 
-    *Tämä on lämmittelytehtävä, jossa riittää, että suoritat valmiiksi annetun komennon ja lisäät sen `01_hello_world.sh`-tiedostoon.*
+    > *Tämä on lämmittelytehtävä, jossa riittää, että suoritat valmiiksi annetun komennon ja teet yhden muutoksen `01_hello_world.sh`-tiedostoon.*
 
-    Voit tulostaa tekstiä komentorivillä `echo`-komennolla. Kokeile kirjoittaa komentoriville `echo 'Hello world!'`. Komento tulostaa odotetusti tekstin `Hello world`.
-
-    Lisää lopuksi komento `01_hello_world.sh`-tiedostoon.
+    Voit tulostaa tekstiä komentorivillä `echo`-komennolla. Kokeile kirjoittaa komentoriville `echo 'Hello world!'`. Avaa sen jälkeen tekstieditorilla oheinen [`01_hello_world.sh`-tiedosto](./01_hello_world.sh) ja seuraa siinä esitettyjä ohjeita. Kun olet valmis, tallenna tiedosto ja kokeile sen suorittamista komentoriviltä `./01_hello_world.sh`. Kun tiedoston suorittaminen tulostaa ruudulle tekstin `Hello world!`, voit siirtyä eteenpäin seuraavaan tehtävään.
 
 
 ## Hakemistot
 
 2. **Nykyinen polku**
 
-    Kirjoita komento, joka tulostaa nykyisen hakemiston polun, esim. `/home/me/linux-commands-me`.
+    Kirjoita komento, joka tulostaa nykyisen hakemiston polun, esim. `/home/me/linux-commands-me` tai `/app`.
 
     Lisää käyttämäsi komento `02_print_working_directory.sh`-tiedostoon.
 
 3. **Nykyisen hakemiston listaus**
 
-    Kirjoita komento, joka listaa **kaikki** nykyisen hakemiston sisältämät tiedostot ja alihakemistot pitkässä muodossa. Listauksessa tulee siis näkyä mm. piilotiedostot ja tiedostojen muokkausajat esim. seuraavassa muodossa:
+    Kirjoita komento, joka listaa **kaikki** nykyisen hakemiston sisältämät tiedostot ja alihakemistot ns. pitkässä muodossa. Listauksessa tulee siis näkyä mm. piilotiedostot ja tiedostojen muokkausajat esim. seuraavassa muodossa:
 
     ```
     drwxr-xr-x+ 5 me me 4096 Jan  9 13:45 .
@@ -184,10 +182,8 @@ Klikkaamalla yllä olevan linkin takaa viimeisintä "GitHub Classroom Workflow" 
 
     💡 Mikäli törmäät virheeseen "This system has been minimized...", asenna ensin `man`-työkalu seuraavilla komennoilla: `unminimize` ja `apt install man-db`.
 
-## Soveltavat (⭐ extra ⭐)
 
-> [!NOTE]
-> Seuraavat tehtävät ovat suositeltavia, mutta niitä ei huomioida tehtävän pisteytyksessä.
+## CURL ja base64
 
 16. **Paketin asentaminen**
 
@@ -201,13 +197,16 @@ Klikkaamalla yllä olevan linkin takaa viimeisintä "GitHub Classroom Workflow" 
 
     Hyödynnä juuri asentamaasi `curl`-komentoa, ja tee HTTP-pyyntö, jolla haet JSON-muotoisen listauksen esimerkkipostauksista osoitteesta https://jsonplaceholder.typicode.com/posts. ["JSONPlaceholder is a simple fake REST API for testing and prototyping."](https://github.com/typicode/jsonplaceholder)
 
-    Lisää käyttämäsi komento `17_curl.sh`-tiedostoon. Komennon tulee tulostaa JSON-rakenne ruudulle, eikä esimerkiksi tallentaa sitä tiedostoon.
+    Lisää käyttämäsi komento `17_curl.sh`-tiedostoon. Komennon `./17_curl.sh` tulee tulostaa JSON-rakenne ruudulle, eikä esimerkiksi tallentaa sitä tiedostoon.
 
 18. **Base 64**
 
     Tiedostossa [secret.txt](./secret.txt) on salainen tarina, joka on tallennettu [base64-muodossa](https://en.wikipedia.org/wiki/Base64). Tutustu [`base64`-komentoon](https://www.google.com/search?q=base64+decode+file+in+linux) ja dekoodaa tiedoston sisältö luettavaan muotoon.
 
-    Lisää käyttämäsi komento `18_base64.sh`-tiedostoon. Komennon tulee tulostaa selkokielinen teksti ruudulle, eikä esimerkiksi tallentaa sitä tiedostoon.
+    Lisää käyttämäsi komento `18_base64.sh`-tiedostoon. Komennon `./18_base64.sh` tulee tulostaa selkokielinen teksti ruudulle, eikä esimerkiksi tallentaa sitä tiedostoon.
+
+
+## Prosessit
 
 19. **Prosessien listaaminen**
 

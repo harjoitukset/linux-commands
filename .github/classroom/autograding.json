@@ -149,9 +149,7 @@
             "comparison": "included",
             "timeout": 1,
             "points": 1
-        }
-    ],
-    "extras": [
+        },
         {
             "name": "16_install",
             "setup": "",
@@ -160,7 +158,7 @@
             "output": "curl",
             "comparison": "included",
             "timeout": 1,
-            "points": 0
+            "points": 1
         },
         {
             "name": "17_curl",
@@ -170,7 +168,7 @@
             "output": "userId",
             "comparison": "included",
             "timeout": 1,
-            "points": 0
+            "points": 1
         },
         {
             "name": "18_base64",
@@ -180,7 +178,7 @@
             "output": "Once upon a time",
             "comparison": "included",
             "timeout": 1,
-            "points": 0
+            "points": 1
         },
         {
             "name": "19_processes",
@@ -190,7 +188,7 @@
             "output": "sshd",
             "comparison": "included",
             "timeout": 1,
-            "points": 0
+            "points": 1
         },
         {
             "name": "20_end_process",
@@ -200,7 +198,7 @@
             "output": "3003",
             "comparison": "included",
             "timeout": 1,
-            "points": 0
+            "points": 1
         }
     ]
 }
