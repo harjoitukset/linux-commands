@@ -176,7 +176,9 @@ Tehtäviä arvioitaessa komennot suoritetaan suoraan tiedostoista, joten sinun k
 
 15. **Putkittaminen (piping)**
 
-    Putkittamisen avulla (piping) voit välittää ensimmäisen ohjelman tulosteen toisen ohjelman syötteeksi. Kirjoita komento, joka näyttää **20 ensimmäistä riviä** head-komennon ohjeesta. Ohjeen saat näkyviin komennolla `man head`.
+    Putkittamisen avulla (piping) voit välittää ensimmäisen ohjelman tulosteen toisen ohjelman syötteeksi. Kirjoita yhdistelmä komentoja, jotka näyttävät **20 ensimmäistä riviä** head-komennon ohjeesta. Ohjeen saat näkyviin komennolla `man head`. 
+    
+    Suorita siis ensin komento, joka tulostaa ohjeen. Putkita saamasi tuloste `head`-komennolle siten, että tulosteesta näytetään vain 20 ensimmäistä riviä. Lisätietoja löydät `head`-komennon ohjeesta.
 
     Lisää käyttämäsi komento `15_head.sh`-tiedostoon.
 
@@ -187,9 +189,9 @@ Tehtäviä arvioitaessa komennot suoritetaan suoraan tiedostoista, joten sinun k
 
 16. **Paketin asentaminen**
 
-    Asenna itsellesi [`curl`-työkalu](https://en.wikipedia.org/wiki/CURL), jonka avulla voit tehdä esimerkiksi HTTP-pyyntöjä kätevästi komentoriviltä. Suosittelemme käyttämään asennuksessa käyttöjärjestelmäsi pakettienhallintatyökalua, kuten [`apt` (Advanced Packaging Tool)](https://ubuntu.com/server/docs/package-management).
+    Asenna itsellesi [`curl`-työkalu](https://en.wikipedia.org/wiki/CURL), jonka avulla voit tehdä esimerkiksi HTTP-pyyntöjä kätevästi komentoriviltä. Suosittelemme käyttämään asennuksessa käyttöjärjestelmäsi pakettienhallintatyökalua, kuten [`apt` (Advanced Packaging Tool)](https://ubuntu.com/server/docs/package-management). 
 
-    Lisää käyttämäsi komento/komennot `16_install.sh`-tiedostoon.
+    Lisää käyttämäsi asennuskomento `16_install.sh`-tiedostoon. Jos käyttöjärjestelmässäsi on curl-työkalu jo asennettuna, kirjoita tiedostoon komento, jolla voit tarkastaa sen version, esim. `curl --version`.
 
     *Vinkki: Jos törmäät ongelmaan "E: Unable to locate package curl", löydät selityksen ongelmasta sekä ohjeet sen korjaamiseksi [tästä StackOverflow-keskustelusta](https://stackoverflow.com/a/27273543).*
 
@@ -208,17 +210,24 @@ Tehtäviä arvioitaessa komennot suoritetaan suoraan tiedostoista, joten sinun k
 
 ## Prosessit
 
+Seuraavissa kohdissa tutustutaan prosessien hallintaan Linuxissa. Prosessi on käynnissä oleva ohjelma, ja Linuxissa on useita työkaluja prosessien tarkasteluun ja hallintaan. Seuraavat kohdat perustuvat ["Viewing and Monitoring Processes in Linux" (Uubuntu.com)](https://discourse.ubuntu.com/t/viewing-and-monitoring-processes-in-linux/26024) -tutoriaaliin, johon perehtyminen on välttämätöntä tehtävän suorittamiseksi.
+
 19. **Prosessien listaaminen**
 
-    Perehdy Ubuntun tutoriaaliin ["Viewing and Monitoring Processes in Linux"](https://discourse.ubuntu.com/t/viewing-and-monitoring-processes-in-linux/26024) prosessien tietojen listaamisen osalta. Seuraa ohjeita ja kokeile mahdollisuuksien mukaan soveltaa niitä.
+    Perehdy [Ubuntun tutoriaaliin](https://discourse.ubuntu.com/t/viewing-and-monitoring-processes-in-linux/26024) prosessien tietojen listaamisen osalta. Seuraa tutoriaalin esimerkkejä ja kokeile mahdollisuuksien mukaan soveltaa niitä omassa ympäristössäsi.
 
     Lisää tutoriaalissa esitetty komento `sshd`-prosessin tietojen katsomiseksi `19_processes.sh`-tiedostoon. Omalla koneellasi vastaavaa prosessia ei todennäköisesti ole käynnissä, joten riittää, että perehdyt komentoon tutoriaalin perusteella.
 
 20. **Prosessin lopettaminen**
 
-    Jatka tutoriaaliin ["Viewing and Monitoring Processes in Linux"](https://discourse.ubuntu.com/t/viewing-and-monitoring-processes-in-linux/26024) perehtymistä prosessien lopettamisen osalta. Seuraa ohjeita ja kokeile mahdollisuuksien mukaan soveltaa niitä.
+    Jatka [samaan tutoriaaliin](https://discourse.ubuntu.com/t/viewing-and-monitoring-processes-in-linux/26024) perehtymistä prosessien lopettamisen osalta. Seuraa ohjeita ja kokeile mahdollisuuksien mukaan soveltaa niitä omassa ympäristössäsi.
 
     Lisää tutoriaalissa esitetty komento prosessin `3003` lopettamiseksi `20_end_process.sh`-tiedostoon. Omalla koneellasi ei todennäköisesti ole käynnissä prosessia `3003`, mutta se ei ole tämän tehtävän kannalta ongelma.
+
+
+## Tehtävän lähettäminen
+
+Kun olet suorittanut kaikki tehtävät, varmista, että olet lisännyt kaikki tekemäsi muutokset versionhallintaan `git add` -komennolla. Tee tämän jälkeen commit ja push. Tarkasta GitHub -repositoriosi Actions-välilehdeltä, että ratkaisemasi tehtävät on arvioitu onnistuneesti. Mikäli jokin kohta ei ole onnistunut, voit korjata sen ja lähettää korjauksen uudelleen. Muista myös kysyä apua ja vinkkejä kurssin keskustelukanavilta, jos jokin on epäselvää tai kohtaat ongelmia.
 
 
 ## Lisenssit ja tekijänoikeudet
